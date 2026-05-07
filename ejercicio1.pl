@@ -14,3 +14,7 @@ media(A,B,M):-M is (A+B)/2.
 
 factorial(0,1).
 factorial(N,R):-N1 is N - 1, factorial(N1,R1), R is N * R1.
+
+fibonacci(0,1).
+fibonacci(1,1).
+fibonacci(N,R):-N1 is N-1, N2 is N-2, fibonacci(N1,R1), fibonacci(N2,R2), R is R1 + R2.
